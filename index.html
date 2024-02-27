@@ -8,17 +8,18 @@
   <body>
     <a-scene>
       <a-entity>
-        <a-box position="-1 2 -3" rotation="0 0 0" color="#4CC3D9"></a-box>
-        <a-sphere position="0 1.25 -10" radius="1.25" color="#EF2D5E"></a-sphere>
-        <a-cylinder rotation="90" position="0 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+        <a-entity geometry="primitive: box" position="-4 0.5 -5" rotation="0 0 0" material="color: green"></a-entity>
+        <a-entity geometry="primitive: box" position="-2 0.5 -6" rotation="0 0 0" material="color: orange"></a-entity>
+        <a-entity geometry="primitive: box" position="0 0.5 -7" rotation="0 0 0" material="color: red"></a-entity>
+        <a-entity geometry="primitive: box" position="2 0.5 -6" rotation="0 0 0" material="color: yellow"></a-entity>
+        <a-entity geometry="primitive: box" position="4 0.5 -5" rotation="0 0 0" material="color: blue"></a-entity> 
+        <a-entity geometry="primitive: plane;  width: 10; height: 10" position="0 0 -4" rotation="-90 0 0" material="color: grey"></a-entity>
       </a-entity>
-          <a-ring position="3 2 -4"></a-ring>
-      <a-sky color="#ECECEC"></a-sky>
-      <a-torus-knot position="-4 2 -3"></a-torus-knot>
-      <a-dodecahedron position="4 2 -3"></a-dodecahedron>
-      <a-text color=red value="My A Frame Scene" position="-0.5 3 -3"></a-text>
+      <a-entity animation="property: position; to: -10 0 0; loop: true; dur: 1000">
+        <a-sphere position="5 4 -6" color="white"></a-sphere>
+      </a-entity>
+      <a-entity geometry="primitive: sphere; radius: 3000"  material="color: grey; shader: flat; side: double"></a-entity>
       
     </a-scene>
   </body>
-</html>
+</html> 
